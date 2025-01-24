@@ -16,18 +16,18 @@ spec:
           service:
             name: gowebapp-service
             port:
-              number: 80
-      - path: /name
-        pathType: Prefix
-        backend:
-          service:
-            name: gowebapp-service
-            port:
-              number: 80
-      - path: /bye
-        pathType: Prefix
-        backend:
-          service:
-            name: gowebapp-service
-            port:
-              number: 80
+              number: 30002
+      # - path: /home
+      #   pathType: Prefix
+      #   backend:
+      #     service:
+      #       name: gowebapp-service
+      #       port:
+      #         number: 30002
+      # - path: /bye
+      #   pathType: Prefix
+      #   backend:
+      #     service:
+      #       name: gowebapp-service
+      #       port:
+      #         number: 80

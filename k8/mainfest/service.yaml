@@ -5,10 +5,10 @@ metadata:
   labels:
     app: gowebapp
 spec:
+  type: NodePort
   selector:
     app: gowebapp
   ports:
   - protocol: TCP
     port: 80
     targetPort: 8089
-  type: NodePort
