@@ -14,13 +14,13 @@ spec:
       labels:
         app: gowebapp
     spec:
-      tolerations:
-      # Moved tolerations under the pod spec
-      - key: "node-role.kubernetes.io/control-plane"
-        operator: "Exists"
-        effect: "NoSchedule"
+      # tolerations:
+      # # Moved tolerations under the pod spec
+      # - key: "node-role.kubernetes.io/control-plane"
+      #   operator: "Exists"
+      #   effect: "NoSchedule"
       containers:
       - name: gowebapp
-        image: daya28/gowebapp:v1
+        image: daya28/gowebapp:v2
         ports:
         - containerPort: 8089
