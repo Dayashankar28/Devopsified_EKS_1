@@ -9,7 +9,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: "goweb-app.local"
+  - host: "www.dayadevops.in"
     http:
       paths:
       - path: /
